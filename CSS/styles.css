@@ -1,0 +1,100 @@
+/* Стиль панели навигации */
+.navbar {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+  }
+  
+  /* Навбар ссылки */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Ссылки навбар при наведении мыши */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Текущая / активная навигационная ссылка */
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Добавить адаптивность - автоматически отображает панель навигации вертикально, а не горизонтально на экранах менее 500 пикселей */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .h1{
+      font-size: 80px;
+      color: white;
+      text-align: center;
+      margin-top: -550px;
+      font-family: serif;
+      opacity: 0.9;
+  }
+  .h2{
+    display:flex;
+    justify-content: center;
+  }
+  .h3{
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      font-size: serif;
+  }
+  .about_me{
+      color: white;
+      text-align: center;
+      margin-top: 422px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: #2c3e50;
+  }
+  .cards{
+    display:flex;
+    justify-content: space-around;
+  }
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 30%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 45%; background-color: #04AA6D;} /* Green */
+.css {width: 55%; background-color: #2196F3;} /* Blue */
+.js {width: 5%; background-color: #f44336;} /* Red */
+#html{
+  margin-left: 20px;
+}
+#css{
+  margin-left: 20px;
+}
+#js{
+  margin-left: 20px;
+}
+
